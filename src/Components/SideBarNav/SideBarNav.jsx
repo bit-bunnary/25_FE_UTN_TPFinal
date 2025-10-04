@@ -36,7 +36,7 @@ const SidebarNav = () => {
                     <div className="bonus-popup">
                         <div className='bonus-images'>
                             <img src='/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
-                            <img src='../public/cookierun.gif' alt='stamp' className='bonus-image-stamp'></img>
+                            <img src='/cookierun.gif' alt='stamp' className='bonus-image-stamp'></img>
                             <img src='/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
                         </div>
                         <h3>¡Secretito desbloqueado!</h3>
