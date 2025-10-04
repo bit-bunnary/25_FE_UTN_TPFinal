@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SidebarNav.css'
+import './SideBarNav.css'
 import { BsEnvelopePaperHeart , BsPostageHeart , BsPersonHearts  } from "react-icons/bs";
 import { BiHeartCircle } from "react-icons/bi";
 import { VscSettingsGear } from "react-icons/vsc";
