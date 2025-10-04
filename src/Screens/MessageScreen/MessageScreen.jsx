@@ -64,7 +64,6 @@ function MessageScreen() {
                     </>) 
                 : (
                     <div className='message-screen__not-found'>
-                       {/*  <span>Contact Not Found</span> */}
                         <img src='../404sakura.gif' className='message-screen__not-found__image'></img>
                     </div>
                 )}
