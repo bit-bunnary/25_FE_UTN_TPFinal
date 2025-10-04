@@ -44,7 +44,7 @@ function MessageScreen() {
             <div className='message-screen__messages-container'>
                 {isContactDetailLoading ? (
                     <div className='message-screen__loading'>
-                        <img src={sakuraLoader} alt='clouds and moon with a sakura flower in the middle'></img>
+                        <img src={sakuraLoader} alt='clouds and moon with a sakura flower in the middle' className='message-screen__loading_img'></img>
                         <span>Loading Dream...</span>
                     </div>
                 ) : contactDetailed ? 

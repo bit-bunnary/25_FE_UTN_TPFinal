@@ -112,3 +112,37 @@
         margin: 0;
     }
 }
+
+@media (max-width: 550px) {
+    .message-screen__loading_img{
+        height: 90%;
+    }
+}
+
+@media (max-width: 530px) {
+    .message-screen__loading_img{
+        height: 80%;
+    }
+}
+
+@media (max-width: 470px) {
+    .message-screen__loading_img{
+        height: 70%;
+    }
+}
+
+@media (max-width: 410px) {
+    .message-screen__loading_img{
+        height: 60%;
+    }
+}
+
+@media (max-width: 360px) {
+    .message-screen__loading_img{
+        height: 50%;
+    }
+}
+
+
+
+
