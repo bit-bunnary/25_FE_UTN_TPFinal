@@ -19,4 +19,7 @@
     font-size: 20px;
     font-weight: bold;
     margin: 0;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
