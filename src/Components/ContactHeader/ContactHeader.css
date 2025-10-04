@@ -16,6 +16,27 @@
     gap: 5px;
 }
 
+.contact-header__back-button{
+    transform: rotate(180deg);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 10px;
+    height: 46px;
+    width: 46px;
+    color: #602f35;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 50px;
+}
+
+.contact-header__back-button:hover{
+    background-color: #f3b3cb;
+}
+
 .contact-header__image {
     display: flex;
     width: 50px;
@@ -25,13 +46,17 @@
     margin-right: 12px;
 }
 
+.contact-header__texts{
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-header__name {
     display: flex;
     color: #602f35;
     font-weight: 600;
     font-size: 18px;
     padding-left: 10px;
-    /* por las dudas para el media */
     word-break: break-word;
     white-space: normal;
     overflow-wrap: break-word;
@@ -41,8 +66,7 @@
     display: flex;
     font-size: 12px;
     color: #666;
-    padding-left: 20px;
-    /* por las dudas para el media */
+    padding-left: 10px;
     word-break: break-word;
     white-space: normal;
     overflow-wrap: break-word;
@@ -66,4 +90,30 @@
 
 .contact-header__button:hover{
     background-color: #f3b3cb;
+}
+
+/* ------ Responsive Mobile ------ */
+
+@media (max-width: 820px){
+    .contact-header__back-button{
+        display: flex;
+    }
+}
+
+@media (max-width: 350px){
+    .contact-header__name{
+        font-size: 16px;
+    }
+    .contact-header__last-seen{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 325px){
+    .contact-header__name{
+        font-size: 11px;
+    }
+    .contact-header__last-seen{
+        font-size: 8px;
+    }
 }

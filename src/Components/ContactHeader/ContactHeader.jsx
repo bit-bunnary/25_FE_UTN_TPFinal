@@ -2,16 +2,25 @@ import React from "react"
 import './ContactHeader.css'
 import { BsCameraVideo } from "react-icons/bs";
 import { IoMdCall } from "react-icons/io";
+import { BsHeartArrow } from "react-icons/bs";
+import { useNavigate } from "react-router";
 
 const ContactHeader = ({image, name, last_connection}) => {
+
+    const navigate = useNavigate();
+
+    const handleGoHome = () => {
+        navigate('/')
+    };
 
     return(
         <div className="contact-header">
             <div className="contact-header__LnR">
+                <button className="contact-header__back-button" onClick={handleGoHome}><BsHeartArrow /></button>
                 <img className="contact-header__image" src={image}></img>
-                <span className="contact-header__name">{name}</span>
-                <div className="contact-header__last-seen">
-                    {last_connection}
+                <div className="contact-header__texts">
+                    <span className="contact-header__name">{name}</span>
+                    <span className="contact-header__last-seen">{last_connection}</span>
                 </div>
             </div>
             <div className="contact-header__LnR">
