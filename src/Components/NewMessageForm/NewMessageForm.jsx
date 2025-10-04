@@ -16,6 +16,13 @@ const NewMessageForm = (props) => {
         form.reset()
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault();
+            event.target.form.requestSubmit();
+        }
+    }
+
     return (
         <form className="new-message-form" onSubmit={handleSubmit}>
             <label htmlFor='mensaje'></label>
@@ -23,6 +30,7 @@ const NewMessageForm = (props) => {
                 id='mensaje'
                 name='mensaje'
                 placeholder='Escribe tu mensaje...'
+                onKeyDown={handleKeyDown}
             />
             <button type='submit'><BsEnvelopeHeart /></button>
         </form>
