@@ -89,3 +89,30 @@
 .message-screen__not-found__image{
     height: 40px;
 }
+
+/* ------ Responsive Mobile ------ */
+
+@media (max-width: 820px) {
+    .message-screen {
+        flex-direction: column;
+    }
+
+    .message-screen__sidebar-container {
+        width: 100%;
+        order: 3;
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5rem 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .message-screen__contacts_y_app-logo-container {
+        display: none;
+        /* ocultamos la lista de contactos */
+    }
+
+    .message-screen__messages-container {
+        width: 100%;
+        order: 1;
+    }
+}

@@ -88,3 +88,29 @@
     justify-content: center;
     font-size: 20px;
 }
+
+/* ------ Responsive Mobile ------ */
+
+@media (max-width: 820px) {
+    .home-screen{
+        flex-direction: column;
+    }
+    .home-screen__sidebar-container {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    }
+
+    .home-screen__contacts_y_app-logo-container {
+        width: 100%;
+        height: 100vh;
+        order: 1;
+        margin: 0;
+    }
+
+    .home-screen__welcome-container {
+        display: none;
+    }
+}

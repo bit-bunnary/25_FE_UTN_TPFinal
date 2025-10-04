@@ -7,19 +7,13 @@
     width: 60px;
 }
 
-.sidebar-nav__upper{
+.sidebar-nav__upper, .sidebar-nav__lower{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     gap: 5px;
 }
 
-.sidebar-nav__lower{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-    gap: 5px;
-}
 
 .sidebar-nav__button {
     display: flex;
@@ -124,4 +118,22 @@
 
 .bonus-popup__close-btn:hover {
     background-color: #c54468;
+}
+
+/* ------ Responsive Mobile ------ */
+
+@media (max-width: 820px) {
+    .sidebar-nav{
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .sidebar-nav__upper, .sidebar-nav__lower{
+        flex-direction: row;
+        padding: 0;
+    }
+
 }
