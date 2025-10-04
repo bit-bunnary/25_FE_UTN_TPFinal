@@ -1,0 +1,47 @@
+/* ------ MESSAGE STYLE ------ */
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.message-body{
+    margin: 0;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.message-container.me{
+    margin-left: auto;
+    border: 3px dashed #fda3e1;
+    background-color:  #ffddf7;
+    box-shadow: 2px 2px 4px #eb8aa2;
+}
+
+.message-container.other{
+    margin-right: auto;
+    border: 3px dashed #b39889;
+    background-color: #fdf1e8;
+    box-shadow: 2px 2px 4px #896a6b;
+}
+
+.message-sender{
+    font-weight: bold;
+    color: #4b3436;
+}
+
+.message-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: oblique;
+}
+
+.message-status{
+    font-weight: 600;
+    color: #8891fa;
+}

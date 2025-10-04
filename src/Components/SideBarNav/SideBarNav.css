@@ -1,0 +1,127 @@
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fae9ef;
+    width: 60px;
+}
+
+.sidebar-nav__upper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.sidebar-nav__lower{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+.sidebar-nav__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #602f35;
+    font-size: 20px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    transition: background 0.2s;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.sidebar-nav__PFP{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    height: 30px;
+}
+
+.sidebar-nav__button:hover {
+    background-color: #f3b3cb;
+}
+
+/* ------ Partecita del Pop UP ------ */
+
+.bonus-popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.bonus-popup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    width: 300px;
+    max-width: 90%;
+}
+
+.bonus-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bonus-image-bow{
+    height: 20px;
+}
+
+.bonus-image-stamp{
+    height: 65px;
+}
+
+.bonus-popup h3 {
+    display: flex;
+    align-items: center;
+    color: #F7507F;
+}
+
+.bonus-text .p{
+    color: #602f35;
+}
+
+.bonus-text{
+    margin-bottom: 0;
+}
+
+.bonus-icon{
+    font-size: 40px;
+    color: #602f35;
+    margin-bottom: 10px;
+}
+
+.bonus-popup__close-btn {
+    padding: 8px 16px;
+    background-color: #F7507F;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.bonus-popup__close-btn:hover {
+    background-color: #c54468;
+}

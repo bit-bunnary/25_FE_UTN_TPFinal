@@ -1,0 +1,22 @@
+.app-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #944A52;
+    color: white;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.app-header__logo {
+    display: flex;
+    margin-right: 12px;
+    height: 55px;
+}
+
+.app-header__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}

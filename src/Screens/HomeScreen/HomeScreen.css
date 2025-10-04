@@ -1,0 +1,90 @@
+.home-screen {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 5px;
+    overflow: hidden;
+    background-color: #CBC9EB;
+}
+
+.home-screen__sidebar-container {
+    display: flex;
+    margin: 10px 0px 10px 10px;
+    border: 10px solid #ff9cbb;
+    border-radius: 10px;
+}
+
+.home-screen__contacts_y_app-logo-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 10px 0px 10px 0px;
+    border: 10px solid #ff9cbb;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.home-screen__contacts{
+    display: flex;
+    overflow-y: auto;
+}
+
+.home-screen__welcome-container {
+    flex: 1;
+    margin: 10px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid #ff9cbb;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-screen__welcome-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.home-screen__welcome-message h2 {
+    display: flex;
+    font-size: 24px;
+    color: #736BC7;
+    padding: 10px;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* Si usás una imagen opcional */
+.home-screen__welcome-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.home-screen__footer-note {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    opacity: 0.7;
+    padding-bottom: 10px;
+    gap: 10px;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.home-screen__footer-note__icon{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}

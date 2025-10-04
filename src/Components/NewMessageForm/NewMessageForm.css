@@ -1,0 +1,42 @@
+.new-message-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.new-message-form textarea {
+    flex: 1;
+    resize: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 2px solid #736BC7;
+    border-radius: 20px;
+    outline: none;
+    transition: border 0.2s ease-in-out;
+    min-height: 40px;
+    max-height: 120px;
+}
+
+
+.new-message-form textarea:focus {
+    border-color: #ff6a8f;
+}
+
+.new-message-form button {
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    font-size: 26px;
+    border: dashed #ff6a8f;
+    background-color: #ffa6bf;
+    color: #4b3436;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.new-message-form button:hover {
+    border: dashed #66E1A5;
+    background-color: #C9FFC2;
+    color: #287550;
+}

@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 32px;
+    position: relative;
+}
+
+header h2{
+    margin: 32px;
+}
+
+header .nav-desktop{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-right: 32px;
+}
+
+header .nav-desktop a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    header .nav-desktop{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 32px;
+        gap: 16px;
+        width: 100vw;
+        position: absolute;
+        top: 70px;
+        background-color: #c9dbab;
+    }
+
+    .btn-menu{
+        display: flex;
+        margin-right: 32px;
+    }
+}

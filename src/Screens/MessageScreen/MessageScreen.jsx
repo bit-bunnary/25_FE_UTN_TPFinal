@@ -1,0 +1,79 @@
+
+import { useContext, useEffect, useState } from 'react'
+import { useParams } from 'react-router'
+import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
+import MessagesList from '../../Components/MessagesList/MessagesList'
+import { getContactById } from '../../Services/contactService'
+import ContactList from '../../Components/ContactList/ContactList'
+import './MessageScreen.css'
+import { ContactDetailContext } from '../../Context/ContactDetailContext'
+import ContactHeader from '../../Components/ContactHeader/ContactHeader'
+import AppHeader from '../../Components/AppHeader/AppHeader'
+import SidebarNav from '../../Components/SideBarNav/SideBarNav'
+
+
+
+function MessageScreen() {
+
+    
+    const {isContactDetailLoading, contactDetailed, onCreateNewMessage} = useContext(ContactDetailContext)
+
+    /* console.log('CONTACT IMAGE:', contactDetailed?.image) */
+
+
+    return (
+        <div className='message-screen'>
+            
+            <div className='message-screen__sidebar-container'>
+                <SidebarNav/>
+            </div>
+
+            <div className='message-screen__contacts_y_app-logo-container'>
+                <AppHeader/>
+                <div className='message-screen__contacts'>
+                    <ContactList/>
+                </div>
+            </div>
+
+            <div className='message-screen__messages-container'>
+                {isContactDetailLoading ? (
+                    <div className='message-screen__loading'>
+                        <img src='../public/Loader_SakuraDreams.gif' alt='clouds and moon with a sakura flower in the middle'></img>
+                        <span>Loading Dream...</span>
+                    </div>
+                ) : contactDetailed ? 
+                (
+                    <>
+                        
+                        <div className='message-screen__contact-header'>
+                            <ContactHeader
+                                name={contactDetailed.name}
+                                image={contactDetailed.image}
+                                last_connection={contactDetailed.last_connection}
+                            />
+                        </div>
+
+                        
+                        <div className='message-screen__messages-list'>
+                            <MessagesList messages={contactDetailed.messages} />
+                        </div>
+
+                        <div className='message-form__container'>
+                            <NewMessageForm onCreateNewMessage={onCreateNewMessage} />
+                        </div>
+                    </>) 
+                : (
+                    <div className='message-screen__not-found'>
+                       {/*  <span>Contact Not Found</span> */}
+                        <img src='../public/404sakura.gif' className='message-screen__not-found__image'></img>
+                    </div>
+                )}
+
+                
+            </div>
+        </div>
+    )
+}
+
+export default MessageScreen
+

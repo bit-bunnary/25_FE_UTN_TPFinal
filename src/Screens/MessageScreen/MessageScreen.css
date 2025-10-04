@@ -1,0 +1,91 @@
+.message-screen{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 5px;
+    overflow: hidden;
+    background-color: #CBC9EB;
+}
+
+.message-screen__sidebar-container {
+    display: flex;
+    margin: 10px 0px 10px 10px;
+    border: 10px solid #ff9cbb;
+    border-radius: 10px;
+}
+
+.message-screen__contacts_y_app-logo-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 10px 0px 10px 0px;
+    border: 10px solid #ff9cbb;
+    background-color: aliceblue;/* puedo ponerle beige tamb  */
+    border-radius: 10px;
+}
+
+.message-screen__app-header{
+    display: flex;
+}
+
+.message-screen__contacts{
+    display: flex;
+    overflow-y: auto;
+}
+
+.message-screen__messages-container {
+    flex: 1;
+    margin: 10px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #ff9cbb;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.message-screen__contact-header {
+    display: flex;
+    height: 80px;
+}
+
+.message-screen__messages-list{
+    flex: 1;
+    display: flex;
+    overflow-y: auto;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 10px; 
+}
+
+.message-form__container{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ------ Momentos de carga/404 ------ */
+
+.message-screen__loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F97CA0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.message-screen__not-found {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #FF4574;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.message-screen__not-found__image{
+    height: 40px;
+}
