@@ -18,7 +18,13 @@ function MessageScreen() {
     
     const {isContactDetailLoading, contactDetailed, onCreateNewMessage} = useContext(ContactDetailContext)
 
-    /* console.log('CONTACT IMAGE:', contactDetailed?.image) */
+    const [sakuraLoader, setSakuraLoader] = useState('/Loader_SakuraDreams.gif')
+
+    useEffect(() => {
+        if (isContactDetailLoading) {
+            setSakuraLoader(`/Loader_SakuraDreams.gif?${Date.now()}`)
+        }
+    }, [isContactDetailLoading])
 
 
     return (
@@ -38,7 +44,7 @@ function MessageScreen() {
             <div className='message-screen__messages-container'>
                 {isContactDetailLoading ? (
                     <div className='message-screen__loading'>
-                        <img src='/Loader_SakuraDreams.gif' alt='clouds and moon with a sakura flower in the middle'></img>
+                        <img src={sakuraLoader} alt='clouds and moon with a sakura flower in the middle'></img>
                         <span>Loading Dream...</span>
                     </div>
                 ) : contactDetailed ? 
