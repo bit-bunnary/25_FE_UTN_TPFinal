@@ -1,4 +1,4 @@
-import contacts from "../Data/ContactsData";
+import contacts from "../Data/contactsData";
 
 export function getAllContacts (){
     return contacts
