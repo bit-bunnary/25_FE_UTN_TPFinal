@@ -62,5 +62,10 @@ font-weight: 800;
     margin: 0px;
 }
 
-
+.contact-list_loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F97CA0;
+}
 

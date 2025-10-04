@@ -12,7 +12,10 @@ const ContactList = () => {
         <div className="father-contact-container">
             {
                 isContactListLoading
-                ? <span>Loading Dream Contacts...</span>
+                ? 
+                    <div className="contact-list_loading">
+                        <span>Loading Dream Contacts...</span>
+                    </div>
                 : contactList.map(
                     (contact) => {
                         return (
