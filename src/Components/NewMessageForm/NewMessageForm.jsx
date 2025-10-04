@@ -8,8 +8,10 @@ const NewMessageForm = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         const form = event.target
-        const message_value = form.mensaje.value
+        const message_value = form.mensaje.value.trim()
         
+        if (message_value.length === 0) return;
+
         props.onCreateNewMessage(message_value)
         form.reset()
     }
