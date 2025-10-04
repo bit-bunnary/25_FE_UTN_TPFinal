@@ -24,7 +24,9 @@ const SidebarNav = () => {
                 <button className="sidebar-nav__button" title="Comunidades"><BsPersonHearts  /></button>
             </div>
             <div className='sidebar-nav__lower'>
-                <button className="sidebar-nav__button" title="Configuración"><VscSettingsGear /></button>
+                <button className="sidebar-nav__button" title="Configuración" onClick={()=> setShowSettingsMenu(true)}>
+                    <VscSettingsGear />
+                </button>
                 <button className="sidebar-nav__button" title="Bonus" onClick={() => setShowBonusPopUp(true)}><BsPostageHeart /></button>
                 <button className="sidebar-nav__button" title="Perfil">
                     <img src='/Pinky_PFP.png' className='sidebar-nav__PFP'></img>
