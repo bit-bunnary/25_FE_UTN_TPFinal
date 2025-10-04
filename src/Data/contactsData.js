@@ -40,8 +40,8 @@ const contacts = [
     },
     {
         id: 2,
-        profile_pic: '/public/EDOL.png',
-        image: '/public/EDOL.png',
+        profile_pic: '/EDOL.png',
+        image: '/EDOL.png',
         name: 'Eden',
         last_connection: '(Last seen 21:02)',
         messages: [
@@ -91,8 +91,8 @@ const contacts = [
     },
     {
         id: 3,
-        profile_pic: '/public/Peter_And.jpg',
-        image: '/public/Peter_And.jpg',
+        profile_pic: '/Peter_And.jpg',
+        image: '/Peter_And.jpg',
         name: 'Peter P.',
         last_connection: '(Last seen 17:00)',
         messages: [
@@ -130,8 +130,8 @@ const contacts = [
     },
     {
         id: 4,
-        profile_pic: '/public/Blade.jpg',
-        image: '/public/Blade.jpg',
+        profile_pic: '/Blade.jpg',
+        image: '/Blade.jpg',
         name: 'Blade',
         last_connection: '(Last seen 03:33)',
         messages: [
@@ -176,8 +176,8 @@ const contacts = [
     {
 
         id: 5,
-        profile_pic: '/public/Silk.jpg',
-        image: '/public/Silk.jpg',
+        profile_pic: '/Silk.jpg',
+        image: '/Silk.jpg',
         name: 'Cindy M.',
         last_connection: '(Last seen 20:45)',
         messages: [
@@ -221,8 +221,8 @@ const contacts = [
     },
     {
         id: 6,
-        profile_pic: '/public/Raleigh_Becket.jpg',
-        image: '/public/Raleigh_Becket.jpg',
+        profile_pic: '/Raleigh_Becket.jpg',
+        image: '/Raleigh_Becket.jpg',
         name: 'Raleigh B.',
         last_connection: '(Last seen 22:11)',
         messages: [
@@ -266,8 +266,8 @@ const contacts = [
     },
     {
         id: 7,
-        profile_pic: '/public/Anna_Coleman.jpg',
-        image: '/public/Anna_Coleman.jpg',
+        profile_pic: '/Anna_Coleman.jpg',
+        image: '/Anna_Coleman.jpg',
         name: 'Anna C.',
         last_connection: '(Last seen 19:02)',
         messages: [
@@ -311,8 +311,8 @@ const contacts = [
     },
     {
         id: 8,
-        profile_pic: '/public/Meteoro.jpg',
-        image: '/public/Meteoro.jpg',
+        profile_pic: '/Meteoro.jpg',
+        image: '/Meteoro.jpg',
         name: 'Meteoro R.',
         last_connection: '(Last seen 21:17)',
         messages: [

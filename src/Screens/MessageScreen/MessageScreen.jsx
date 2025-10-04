@@ -38,7 +38,7 @@ function MessageScreen() {
             <div className='message-screen__messages-container'>
                 {isContactDetailLoading ? (
                     <div className='message-screen__loading'>
-                        <img src='../public/Loader_SakuraDreams.gif' alt='clouds and moon with a sakura flower in the middle'></img>
+                        <img src='/Loader_SakuraDreams.gif' alt='clouds and moon with a sakura flower in the middle'></img>
                         <span>Loading Dream...</span>
                     </div>
                 ) : contactDetailed ? 
@@ -65,7 +65,7 @@ function MessageScreen() {
                 : (
                     <div className='message-screen__not-found'>
                        {/*  <span>Contact Not Found</span> */}
-                        <img src='../public/404sakura.gif' className='message-screen__not-found__image'></img>
+                        <img src='../404sakura.gif' className='message-screen__not-found__image'></img>
                     </div>
                 )}
 

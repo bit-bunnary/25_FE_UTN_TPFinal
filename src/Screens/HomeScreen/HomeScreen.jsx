@@ -20,7 +20,7 @@ function HomeScreen(){
             </div>
             <div className='home-screen__welcome-container'>
                 <div className='home-screen__welcome-message'>
-                    <img src="/public/mail8.gif" alt="Letter" className="home-screen__welcome-icon" />
+                    <img src="/mail8.gif" alt="Letter" className="home-screen__welcome-icon" />
                     <h2>Seleccioná un chat y empezá a mensajear</h2>
                 </div>
                 <div className='home-screen__footer-note'>

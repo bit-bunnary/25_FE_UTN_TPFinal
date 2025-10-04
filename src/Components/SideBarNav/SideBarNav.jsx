@@ -27,7 +27,7 @@ const SidebarNav = () => {
                 <button className="sidebar-nav__button" title="Configuración"><VscSettingsGear /></button>
                 <button className="sidebar-nav__button" title="Bonus" onClick={() => setShowBonusPopUp(true)}><BsPostageHeart /></button>
                 <button className="sidebar-nav__button" title="Perfil">
-                    <img src='/public/Pinky_PFP.png' className='sidebar-nav__PFP'></img>
+                    <img src='/Pinky_PFP.png' className='sidebar-nav__PFP'></img>
                 </button>
             </div>
 
@@ -35,9 +35,9 @@ const SidebarNav = () => {
                 <div className="bonus-popup__overlay">
                     <div className="bonus-popup">
                         <div className='bonus-images'>
-                            <img src='../public/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
+                            <img src='/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
                             <img src='../public/cookierun.gif' alt='stamp' className='bonus-image-stamp'></img>
-                            <img src='../public/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
+                            <img src='/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
                         </div>
                         <h3>¡Secretito desbloqueado!</h3>
                         <p className='bonus-text'>Hacer este botoncito no fue en vano ya que lo descubriste!(づ￣ 3￣)づ</p>
