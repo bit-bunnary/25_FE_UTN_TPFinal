@@ -15,6 +15,7 @@ const SidebarNav = () => {
     };
 
     const [showBonusPopUp , setShowBonusPopUp ] = useState(false)
+    const [showSettingsMenu, setShowSettingsMenu] =useState(false)
 
     return (
         <div className="sidebar-nav">
@@ -45,6 +46,23 @@ const SidebarNav = () => {
                         <p className='bonus-text'>Hacer este botoncito no fue en vano ya que lo descubriste!(づ￣ 3￣)づ</p>
                         <span className='bonus-icon'><GiLockedHeart /></span>
                         <button className="bonus-popup__close-btn" onClick={() => setShowBonusPopUp(false)}>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            )}
+            
+            {showSettingsMenu && (
+                <div className="settings-popup__overlay">
+                    <div className="settings-popup">
+                        <h3>Configuración</h3>
+                        <ul className="settings-popup__list">
+                            <li className="settings-popup__item">Cambiar tema</li>
+                            <li className="settings-popup__item">Editar perfil</li>
+                            <li className="settings-popup__item">Notificaciones</li>
+                            <li className="settings-popup__item">Cerrar sesión</li>
+                        </ul>
+                        <button className="settings-popup__close-btn" onClick={() => setShowSettingsMenu(false)}>
                             Cerrar
                         </button>
                     </div>
