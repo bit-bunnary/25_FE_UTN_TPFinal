@@ -1,4 +1,4 @@
-import React , {useContext} from "react"
+import React , {useContext, useEffect, useState} from "react"
 import '../ContactCard/ContactCard.css'
 import { getAllContacts } from "../../Services/contactService"
 import { Link } from "react-router"
@@ -8,12 +8,20 @@ const ContactList = () => {
     const {contactList, isContactListLoading} = useContext(ContactListContext)
     console.log("getAllContacts():", getAllContacts());
 
+    const [stampLoader, setStampLoader] = useState('/ContactsLoader.gif')
+    useEffect(() =>{
+        if (isContactListLoading) {
+            setStampLoader(`/ContactsLoader.gif?${Date.now()}`)
+        }
+    }, [isContactListLoading])
+
     return(
         <div className="father-contact-container">
             {
                 isContactListLoading
                 ? 
                     <div className="contact-list_loading">
+                        <img src={stampLoader} alt="Stamp with person" className="contact-list_loading_img"></img>
                         <span>Loading Dream Contacts...</span>
                     </div>
                 : contactList.map(
