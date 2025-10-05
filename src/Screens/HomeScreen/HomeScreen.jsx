@@ -6,12 +6,12 @@ import { TbMailHeart } from "react-icons/tb";
 import './HomeScreen.css'
 
 function HomeScreen(){
-    const [isOrangeFilterActive, setIsOrangeFilterActive] = useState(false)
+    
 
     return(
         <div className='home-screen'>
             <div className='home-screen__sidebar-container'>
-                <SidebarNav setIsOrangeFilterActive={setIsOrangeFilterActive}/>
+                <SidebarNav />
             </div>
 
             <div className='home-screen__contacts_y_app-logo-container'>
@@ -36,7 +36,6 @@ function HomeScreen(){
                     </div>
                 </div>
             </div>
-            {isOrangeFilterActive && <div className="orange-overlay"></div>}
         </div>
     )
 }

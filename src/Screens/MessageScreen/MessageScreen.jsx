@@ -31,7 +31,7 @@ function MessageScreen() {
         <div className='message-screen'>
             
             <div className='message-screen__sidebar-container'>
-                <SidebarNav/>
+                <SidebarNav />
             </div>
 
             <div className='message-screen__contacts_y_app-logo-container'>
@@ -73,8 +73,6 @@ function MessageScreen() {
                         <img src='../404sakura.gif' className='message-screen__not-found__image'></img>
                     </div>
                 )}
-
-                
             </div>
         </div>
     )

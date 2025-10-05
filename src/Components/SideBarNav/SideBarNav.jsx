@@ -6,7 +6,7 @@ import { VscSettingsGear } from "react-icons/vsc";
 import { useNavigate } from 'react-router';
 import { GiLockedHeart } from "react-icons/gi";
 
-const SidebarNav = ({setIsOrangeFilterActive}) => {
+const SidebarNav = () => {
 
     const navigate = useNavigate();
 
@@ -58,8 +58,10 @@ const SidebarNav = ({setIsOrangeFilterActive}) => {
                     <div className="settings-popup">
                         <h3>Configuración</h3>
                         <ul className="settings-popup__list">
-                            <li className="settings-popup__item" onClick={() => setIsOrangeFilterActive(prev => !prev)}>Lentes de Sol</li>
-                            <li className="settings-popup__item">Editar perfil</li>
+                            <li className="settings-popup__item">Cuenta</li>
+                            <li className="settings-popup__item">Privacidad</li>
+                            <li className="settings-popup__item">Chats</li>
+                            <li className="settings-popup__item">Notificaciones</li>
                             <li className="settings-popup__item">Cerrar sesión</li>
                         </ul>
                         <button className="settings-popup__close-btn" onClick={() => setShowSettingsMenu(false)}>
