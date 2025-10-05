@@ -42,7 +42,7 @@ const ContactDetailContextProvider = (props) => {
             id: contactDetailed.messages.length + 1,
             author: 'Yo',
             msg_content: new_message,
-            timestamp: '22:25pm',
+            timestamp: '22:25',
         }
         const messages_cloned = [...contactDetailed.messages]
         messages_cloned.push(new_message_obj)
