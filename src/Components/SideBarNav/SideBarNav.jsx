@@ -4,7 +4,10 @@ import { BsEnvelopePaperHeart , BsPostageHeart , BsPersonHearts  } from "react-i
 import { BiHeartCircle } from "react-icons/bi";
 import { VscSettingsGear } from "react-icons/vsc";
 import { useNavigate } from 'react-router';
-import { GiLockedHeart } from "react-icons/gi";
+import { GiLockedHeart , GiHeartKey } from "react-icons/gi";
+import { TbLockHeart , TbBellHeart } from "react-icons/tb";
+import { BsChatHeart } from "react-icons/bs";
+import { BiLogOut } from "react-icons/bi";
 
 const SidebarNav = () => {
 
@@ -58,11 +61,11 @@ const SidebarNav = () => {
                     <div className="settings-popup">
                         <h3>Configuración</h3>
                         <ul className="settings-popup__list">
-                            <li className="settings-popup__item">Cuenta</li>
-                            <li className="settings-popup__item">Privacidad</li>
-                            <li className="settings-popup__item">Chats</li>
-                            <li className="settings-popup__item">Notificaciones</li>
-                            <li className="settings-popup__item">Cerrar sesión</li>
+                            <li className="settings-popup__item"><GiHeartKey/> Cuenta</li>
+                            <li className="settings-popup__item"><TbLockHeart /> Privacidad</li>
+                            <li className="settings-popup__item"><BsChatHeart/> Chats</li>
+                            <li className="settings-popup__item"><TbBellHeart/> Notificaciones</li>
+                            <li className="settings-popup__item"><BiLogOut/> Cerrar sesión</li>
                         </ul>
                         <button className="settings-popup__close-btn" onClick={() => setShowSettingsMenu(false)}>
                             Cerrar
