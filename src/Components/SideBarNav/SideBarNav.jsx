@@ -6,7 +6,7 @@ import { VscSettingsGear } from "react-icons/vsc";
 import { useNavigate } from 'react-router';
 import { GiLockedHeart } from "react-icons/gi";
 
-const SidebarNav = () => {
+const SidebarNav = ({setIsOrangeFilterActive}) => {
 
     const navigate = useNavigate();
 
@@ -16,6 +16,7 @@ const SidebarNav = () => {
 
     const [showBonusPopUp , setShowBonusPopUp ] = useState(false)
     const [showSettingsMenu, setShowSettingsMenu] =useState(false)
+
 
     return (
         <div className="sidebar-nav">
@@ -57,9 +58,8 @@ const SidebarNav = () => {
                     <div className="settings-popup">
                         <h3>Configuración</h3>
                         <ul className="settings-popup__list">
-                            <li className="settings-popup__item">Cambiar tema</li>
+                            <li className="settings-popup__item" onClick={() => setIsOrangeFilterActive(prev => !prev)}>Lentes de Sol</li>
                             <li className="settings-popup__item">Editar perfil</li>
-                            <li className="settings-popup__item">Notificaciones</li>
                             <li className="settings-popup__item">Cerrar sesión</li>
                         </ul>
                         <button className="settings-popup__close-btn" onClick={() => setShowSettingsMenu(false)}>
