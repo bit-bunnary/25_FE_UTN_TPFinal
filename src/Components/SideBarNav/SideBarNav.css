@@ -157,6 +157,10 @@
 }
 
 .settings-popup__item {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap: 5px;
     padding: 10px;
     margin: 5px;
     background-color: #fce4ec;
