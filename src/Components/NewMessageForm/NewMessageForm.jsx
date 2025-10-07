@@ -13,7 +13,7 @@ const NewMessageForm = (props) => {
         if (message_value.length === 0) return;
 
         const now = new Date()
-        const hora = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
+        const hora = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: false})
 
         const nuevoMensaje = {
             msg: message_value,
