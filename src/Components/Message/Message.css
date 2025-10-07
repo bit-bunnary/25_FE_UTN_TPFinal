@@ -49,11 +49,6 @@
     font-weight: 600;
 }
 
-.message-status__icon{
-    margin-bottom: 2.5px;
-    font-size: 18px;
-}
-
 .message-status.seen{
 
     color: #8891fa
@@ -63,6 +58,25 @@
     color: #666
 }
 
+.message-status__icon{
+    margin-bottom: 2.5px;
+    font-size: 18px;
+}
+
+@keyframes heartbeat {
+0% { transform: scale(1); }
+14% { transform: scale(1.2); }
+28% { transform: scale(1); }
+42% { transform: scale(1.2); }
+70% { transform: scale(1); }
+}
+
+.message-status.sent .message-status__icon {
+    animation: heartbeat 1.2s ease-in-out infinite;
+    color: #666;
+}
+
+
 /* ------ Responsive Mobile ------ */
 
 @media (max-width: 820px){
@@ -70,9 +84,3 @@
         max-width: 75%;
     }
 }
-
-/* @media (max-width: 410px){
-    .message-container{
-        max-width: 90%;
-    }
-} */
