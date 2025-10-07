@@ -15,6 +15,7 @@
     transition: border 0.2s ease-in-out;
     min-height: 40px;
     max-height: 120px;
+    margin-right: 10px;
 }
 
 
