@@ -31,6 +31,7 @@
 .message-screen__contacts{
     display: flex;
     overflow-y: auto;
+    height: 100%;
 }
 
 .message-screen__messages-container {

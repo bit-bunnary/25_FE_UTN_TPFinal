@@ -27,6 +27,7 @@
 .home-screen__contacts{
     display: flex;
     overflow-y: auto;
+    height: 100%;
 }
 
 .home-screen__welcome-container {
