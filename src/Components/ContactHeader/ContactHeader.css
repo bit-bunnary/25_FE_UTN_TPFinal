@@ -92,6 +92,90 @@
     background-color: #f3b3cb;
 }
 
+/* ------ PFP PopUp ------ */
+
+.contact-popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.contact-popup {
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-popup__image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #F7507F;
+}
+
+.contact-popup__name {
+    margin: 0;
+    color: #602f35;
+}
+
+.contact-popup__button-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.contact-popup__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    background-color: #f7d5e0;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #602f35;
+    transition: background-color 0.2s ease
+}
+
+
+.contact-popup__buttons:hover {
+    background-color: #f3b3cb;
+}
+
+.contact-popup__close-btn {
+    padding: 8px 16px;
+    background-color: #F7507F;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-popup__close-btn:hover {
+    background-color: #c54468;
+}
+
 /* ------ Responsive Mobile ------ */
 
 @media (max-width: 820px){
