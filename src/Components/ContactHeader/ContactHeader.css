@@ -137,8 +137,8 @@
 }
 
 .contact-popup__image {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #f3b3cb;
@@ -147,6 +147,12 @@
 .contact-popup__name {
     margin: 0;
     color: #602f35;
+}
+
+.contact-popup__desc{
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 
 .contact-popup__button-list {

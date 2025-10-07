@@ -5,7 +5,7 @@ const contacts = [
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Fe2%2Fd4%2Ff9%2Fe2d4f9a91d646256402048d439ebf3e6.jpg&f=1&nofb=1&ipt=406ca856ab768c1620a0593130e44773d282feb23b53a9002a5fe58f218eff1d',
         name: 'Rodrick H.',
         last_connection: '(Last seen 03:51)',
-        description:'LOADED DIAPER BABY!',
+        description:'LOADED DIAPER BABY!!!🤟🏻🤑🧷',
         messages: [
             {
                 id: 1,
@@ -44,6 +44,7 @@ const contacts = [
         profile_pic: '/EDOL.png',
         image: '/EDOL.png',
         name: 'Eden',
+        description:'Chopping logs 🪓🪵',
         last_connection: '(Last seen 21:02)',
         messages: [
             {
@@ -95,6 +96,7 @@ const contacts = [
         profile_pic: '/Peter_And.jpg',
         image: '/Peter_And.jpg',
         name: 'Peter P.',
+        description:'Fotógrafo freelance, genio en ciencias, superhéroe ocasional.',
         last_connection: '(Last seen 17:00)',
         messages: [
             {
@@ -134,6 +136,7 @@ const contacts = [
         profile_pic: '/Blade.jpg',
         image: '/Blade.jpg',
         name: 'Blade',
+        description: 'No voy a hacerte inmortal.',
         last_connection: '(Last seen 03:33)',
         messages: [
             {
@@ -180,6 +183,7 @@ const contacts = [
         profile_pic: '/Silk.jpg',
         image: '/Silk.jpg',
         name: 'Cindy M.',
+        description: 'Conectada por telarañas… y WiFi inestable 😵‍💫',
         last_connection: '(Last seen 20:45)',
         messages: [
             {
@@ -225,6 +229,7 @@ const contacts = [
         profile_pic: '/Raleigh_Becket.jpg',
         image: '/Raleigh_Becket.jpg',
         name: 'Raleigh B.',
+        description: 'Gipsy Danger: Nuclear. Clásica. Imparable. Como yo.', 
         last_connection: '(Last seen 22:11)',
         messages: [
             {
@@ -270,6 +275,7 @@ const contacts = [
         profile_pic: '/Anna_Coleman.jpg',
         image: '/Anna_Coleman.jpg',
         name: 'Anna C.',
+        description: 'Ugh! No es una fase, mamá 🙄🎸 ',
         last_connection: '(Last seen 19:02)',
         messages: [
             {
@@ -315,6 +321,7 @@ const contacts = [
         profile_pic: '/Meteoro.jpg',
         image: '/Meteoro.jpg',
         name: 'Meteoro R.',
+        description: 'Ready. Set. Go! 🏁',
         last_connection: '(Last seen 21:17)',
         messages: [
             {
