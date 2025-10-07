@@ -200,6 +200,10 @@
         gap: 10px;
     }
 
+    .sidebar-nav__button{
+        font-size: 22px;
+    }
+
     .sidebar-nav__upper, .sidebar-nav__lower{
         flex-direction: row;
         padding: 0;
