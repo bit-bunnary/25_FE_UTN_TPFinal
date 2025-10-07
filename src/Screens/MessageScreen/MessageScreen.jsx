@@ -63,6 +63,7 @@ function MessageScreen() {
                                 name={contactDetailed.name}
                                 image={contactDetailed.image}
                                 last_connection={contactDetailed.last_connection}
+                                description={contactDetailed.description}
                             />
                         </div>
 

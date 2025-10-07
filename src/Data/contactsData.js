@@ -5,6 +5,7 @@ const contacts = [
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Fe2%2Fd4%2Ff9%2Fe2d4f9a91d646256402048d439ebf3e6.jpg&f=1&nofb=1&ipt=406ca856ab768c1620a0593130e44773d282feb23b53a9002a5fe58f218eff1d',
         name: 'Rodrick H.',
         last_connection: '(Last seen 03:51)',
+        description:'LOADED DIAPER BABY!',
         messages: [
             {
                 id: 1,

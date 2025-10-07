@@ -6,7 +6,7 @@ import { BsHeartArrow } from "react-icons/bs";
 import { TbBellHeart, TbPhotoHeart, TbMessage2Heart, TbMessageStar } from "react-icons/tb";
 import { useNavigate } from "react-router";
 
-const ContactHeader = ({image, name, last_connection}) => {
+const ContactHeader = ({image, name, last_connection, description}) => {
 
     const navigate = useNavigate();
     const [showContactPopUp, setShowContactPopUp] = useState(false)
@@ -37,7 +37,7 @@ const ContactHeader = ({image, name, last_connection}) => {
                     <div className="contact-popup">
                         <img src={image} alt="foto grande" className="contact-popup__image" />
                         <h2 className="contact-popup__name">{name}</h2>
-
+                        <span className="contact-popup__desc">"{description}"</span>
                         <div className="contact-popup__button-list">
                             <button className="contact-popup__buttons"><TbBellHeart/> Notificaciones</button>
                             <button className="contact-popup__buttons"><TbPhotoHeart /> Galería</button>
