@@ -3,7 +3,7 @@ import './ContactHeader.css'
 import { BsCameraVideo } from "react-icons/bs";
 import { IoMdCall } from "react-icons/io";
 import { BsHeartArrow } from "react-icons/bs";
-import { TbBellHeart, TbPhotoHeart, TbMessage2Heart } from "react-icons/tb";
+import { TbBellHeart, TbPhotoHeart, TbMessage2Heart, TbMessageStar } from "react-icons/tb";
 import { useNavigate } from "react-router";
 
 const ContactHeader = ({image, name, last_connection}) => {
@@ -41,7 +41,7 @@ const ContactHeader = ({image, name, last_connection}) => {
                         <div className="contact-popup__button-list">
                             <button className="contact-popup__buttons"><TbBellHeart/> Notificaciones</button>
                             <button className="contact-popup__buttons"><TbPhotoHeart /> Galería</button>
-                            <button className="contact-popup__buttons"><TbMessage2Heart /> Mensajes Destacados</button>
+                            <button className="contact-popup__buttons"><TbMessageStar /> Mensajes Destacados</button>
                         </div>
 
                         <button className="contact-popup__close-btn" onClick={() => setShowContactPopUp(false)}>
