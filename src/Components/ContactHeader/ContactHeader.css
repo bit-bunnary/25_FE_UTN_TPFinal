@@ -186,6 +186,10 @@
     background-color: #f3b3cb;
 }
 
+.contact-popup__buttons-icons{
+    margin-bottom: 5px;
+}
+
 .contact-popup__block-button{
     display: flex;
     flex-direction: row;

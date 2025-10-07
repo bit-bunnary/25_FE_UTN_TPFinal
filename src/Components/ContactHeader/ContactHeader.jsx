@@ -42,22 +42,22 @@ const ContactHeader = ({image, name, last_connection, description}) => {
                         <div className="contact-popup__button-list">
                             <button className="contact-popup__buttons">
                                 <span className="contact-popup__buttons-text">
-                                    <TbBellHeart/> Notificaciones
+                                    <TbBellHeart className="contact-popup__buttons-icons"/> Notificaciones
                                 </span>
                             </button>
                             <button className="contact-popup__buttons">
                                 <span className="contact-popup__buttons-text">
-                                    <TbPhotoHeart /> Galería
+                                    <TbPhotoHeart className="contact-popup__buttons-icons"/> Galería
                                 </span>
                             </button>
                             <button className="contact-popup__buttons">
                                 <span className="contact-popup__buttons-text">
-                                    <TbMessageStar /> Mensajes Destacados
+                                    <TbMessageStar className="contact-popup__buttons-icons"/> Mensajes Destacados
                                 </span>
                             </button>
                             <button className="contact-popup__block-button">
                                 <span className="contact-popup__buttons-text">
-                                    <TbHeartBroken /> Bloquear
+                                    <TbHeartBroken className="contact-popup__buttons-icons"/> Bloquear
                                 </span>
                             </button>
                         </div>
