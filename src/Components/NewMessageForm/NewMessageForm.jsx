@@ -12,7 +12,16 @@ const NewMessageForm = (props) => {
         
         if (message_value.length === 0) return;
 
-        props.onCreateNewMessage(message_value)
+        const now = new Date()
+        const hora = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
+
+        const nuevoMensaje = {
+            msg: message_value,
+            date: hora,
+            fromMe: true
+        }
+
+        props.onCreateNewMessage(nuevoMensaje)
         form.reset()
     }
 
