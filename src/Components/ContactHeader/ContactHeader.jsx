@@ -40,10 +40,26 @@ const ContactHeader = ({image, name, last_connection, description}) => {
                         <span className="contact-popup__desc">"{description}"</span>
 
                         <div className="contact-popup__button-list">
-                            <button className="contact-popup__buttons"><TbBellHeart/> Notificaciones</button>
-                            <button className="contact-popup__buttons"><TbPhotoHeart /> Galería</button>
-                            <button className="contact-popup__buttons"><TbMessageStar /> Mensajes Destacados</button>
-                            <button className="contact-popup__block-button"><TbHeartBroken /> Bloquear</button>
+                            <button className="contact-popup__buttons">
+                                <span className="contact-popup__buttons-text">
+                                    <TbBellHeart/> Notificaciones
+                                </span>
+                            </button>
+                            <button className="contact-popup__buttons">
+                                <span className="contact-popup__buttons-text">
+                                    <TbPhotoHeart /> Galería
+                                </span>
+                            </button>
+                            <button className="contact-popup__buttons">
+                                <span className="contact-popup__buttons-text">
+                                    <TbMessageStar /> Mensajes Destacados
+                                </span>
+                            </button>
+                            <button className="contact-popup__block-button">
+                                <span className="contact-popup__buttons-text">
+                                    <TbHeartBroken /> Bloquear
+                                </span>
+                            </button>
                         </div>
 
                         <button className="contact-popup__close-btn" onClick={() => setShowContactPopUp(false)}>
