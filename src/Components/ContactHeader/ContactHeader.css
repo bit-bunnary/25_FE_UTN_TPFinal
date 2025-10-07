@@ -184,6 +184,46 @@
     background-color: #f3b3cb;
 }
 
+.contact-popup__block-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 16px;
+    background-color: #8a2b46;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20%,
+    60% {
+        transform: translateX(-2px);
+    }
+
+    40%,
+    80% {
+        transform: translateX(2px);
+    }
+}
+
+.contact-popup__block-button:hover{
+    animation: shake 0.5s ease-in-out infinite;
+    background-color: #681d33;
+    font-weight: bold;
+    
+}
+
 .contact-popup__close-btn {
     padding: 8px 16px;
     background-color: #F7507F;
