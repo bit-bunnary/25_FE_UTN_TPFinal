@@ -3,3 +3,14 @@
     flex-direction: column;
     gap: 15px;
 }
+
+.messages-list__date-label{
+    text-align: center;
+    margin: 15px auto;
+    padding: 6px 12px;
+    background-color: #ff9cbb;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #602f35;
+    width: fit-content;
+}

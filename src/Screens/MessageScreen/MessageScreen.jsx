@@ -20,11 +20,18 @@ function MessageScreen() {
 
     const [sakuraLoader, setSakuraLoader] = useState('/Loader_SakuraDreams.gif')
 
+    const [showDateLabel, setShowDateLabel] = useState(false)
+
     useEffect(() => {
         if (isContactDetailLoading) {
             setSakuraLoader(`/Loader_SakuraDreams.gif?${Date.now()}`)
         }
     }, [isContactDetailLoading])
+
+    const handleCreateNewMessage = (newMessage) => {
+        onCreateNewMessage(newMessage)
+        setShowDateLabel(true)
+    }
 
 
     return (
@@ -61,11 +68,16 @@ function MessageScreen() {
 
                         
                         <div className='message-screen__messages-list'>
-                            <MessagesList messages={contactDetailed.messages} />
+                            {showDateLabel && (
+                                <div className='message-screen__date-label'>
+                                    Ayer
+                                </div>
+                            )}
+                            <MessagesList messages={contactDetailed.messages} showDateLabel={showDateLabel} />
                         </div>
 
                         <div className='message-form__container'>
-                            <NewMessageForm onCreateNewMessage={onCreateNewMessage} />
+                            <NewMessageForm onCreateNewMessage={handleCreateNewMessage} />
                         </div>
                     </>) 
                 : (
