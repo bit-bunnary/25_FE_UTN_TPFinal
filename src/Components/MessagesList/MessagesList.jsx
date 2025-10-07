@@ -31,6 +31,7 @@ const MessagesList = ({messages, showDateLabel}) => {
                             msg={message.msg_content}
                             date={message.timestamp}
                             fromMe={isMine}
+                            status={message.status}
                         />
                     </div>
                 );

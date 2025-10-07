@@ -1,8 +1,12 @@
 import React from "react"
-import { TbHeartCheck } from "react-icons/tb"
+import { TbHeartCheck, TbHeartBroken } from "react-icons/tb"
 import "./Message.css"
 
-function Message ({nombre, msg, date, fromMe}) {
+function Message ({nombre, msg, date, fromMe, status}) {
+
+    const statusClass = status === 'Sent' ? 'sent' : 'seen'
+    const IconComponent = status === 'Sent' ? TbHeartBroken : TbHeartCheck
+
     return (
         <div className={`message-container ${fromMe? 'me' : 'other'}`}>
             <span className="message-sender text-18">{nombre}</span>
@@ -10,10 +14,10 @@ function Message ({nombre, msg, date, fromMe}) {
             <hr/>
             <div className="message-footer text-14">
                 <span>{date}</span>
-                <div className="message-status">
-                    <span>Seen</span>
-                    <span className="message-status__seen-icon"><TbHeartCheck /></span>
-                </div>
+                <div className={`message-status ${statusClass}`}>
+                        <span>{status || 'Seen'}</span>
+                        <span className="message-status__icon"><IconComponent /></span>
+                    </div>
             </div>
         </div>
     )
