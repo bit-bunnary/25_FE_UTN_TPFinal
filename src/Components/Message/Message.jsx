@@ -1,4 +1,5 @@
 import React from "react"
+import { TbHeartCheck } from "react-icons/tb"
 import "./Message.css"
 
 function Message ({nombre, msg, date, fromMe}) {
@@ -9,7 +10,10 @@ function Message ({nombre, msg, date, fromMe}) {
             <hr/>
             <div className="message-footer text-14">
                 <span>{date}</span>
-                <span className="message-status">Seen</span>
+                <div className="message-status">
+                    <span>Seen</span>
+                    <span className="message-status__seen-icon"><TbHeartCheck /></span>
+                </div>
             </div>
         </div>
     )
