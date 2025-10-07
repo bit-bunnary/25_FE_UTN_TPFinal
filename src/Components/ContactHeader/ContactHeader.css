@@ -37,13 +37,28 @@
     background-color: #f3b3cb;
 }
 
-.contact-header__image {
-    display: flex;
+.contact-header__image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: none;
+    border-radius: 50%;
+}
+
+.contact-header__image-button:hover{
+    
+    border: 5px solid #f3b3cb;
+    transition: border 0.2s;
+}
+
+.contact-header__image{
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 12px;
 }
 
 .contact-header__texts{
