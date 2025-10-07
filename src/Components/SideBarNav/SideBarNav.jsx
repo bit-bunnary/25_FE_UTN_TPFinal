@@ -47,7 +47,8 @@ const SidebarNav = () => {
                             <img src='/picnicbow.gif' alt='moño/bow' className='bonus-image-bow'></img>
                         </div>
                         <h3>¡Secretito desbloqueado!</h3>
-                        <p className='bonus-text'>Hacer este botoncito no fue en vano ya que lo descubriste!(づ￣ 3￣)づ</p>
+                        <p className='bonus-text'>Hacer este botoncito no fue en vano ya que lo descubriste!</p>
+                        <p className='bonus-text'>(づ￣ 3￣)づ</p>
                         <span className='bonus-icon'><GiLockedHeart /></span>
                         <button className="bonus-popup__close-btn" onClick={() => setShowBonusPopUp(false)}>
                             Cerrar
