@@ -3,7 +3,7 @@
 Para realizar la app (clon de WhatsApp, pero con estilos propios) utilicé:
 
     - React (Vrs. 19.2.0)
-    - Enturamientos hechos con React-Router (Vrs. 7.9.1)
+    - Enrutamientos hechos con React-Router (Vrs. 7.9.1)
     - Paquete de íconos de React Icons
     - Utilicé Bootstrap (Vrs. 5.3.8) en un comienzo para hacer un CSS básico, el cuál descarté una vez empecé a trabajar con los estilos finales
 
