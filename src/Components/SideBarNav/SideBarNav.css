@@ -69,6 +69,7 @@
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     width: 350px;
+    height: 410px;
     max-width: 90%;
 }
 
@@ -212,5 +213,19 @@
 @media (max-width: 330px) {
     .sidebar-nav{
         gap: 0;
+    }
+}
+
+/* ------ Responsive Mobile Vertical ------ */
+
+@media (max-height: 650px){
+    .bonus-popup{
+        max-height: 90%;
+        overflow-y: auto;
+    }
+
+    .settings-popup{
+        max-height: 90%;
+        overflow-y: auto;
     }
 }
