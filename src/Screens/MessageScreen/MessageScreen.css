@@ -32,6 +32,7 @@
     display: flex;
     overflow-y: auto;
     height: 100%;
+    padding-top: 5px;
 }
 
 .message-screen__messages-container {
