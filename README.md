@@ -19,6 +19,10 @@ Para realizar la app (clon de WhatsApp, pero con estilos propios) utilicé:
 
 + Todos los Loaders que aparecen fueron hechos 100% por mí
 
++ Hay mínimas animaciones implementadas como:
+    - Cuando se envía un mensaje el corazón roto "palpita"
+    - Cuando se hace hover sobre el botón "Bloquear", este se sacude (para que no lo hagas)
+
 + Los chats tienen mensajes diferentes, al igual que las descripciones de cada personaje
 
 + Se pueden enviar mensajes los cuales se guardan en un estado (no van a ser respondidos...de momento)
