@@ -28,7 +28,6 @@ const ContactHeader = ({image, name, last_connection, description}) => {
                 </div>
             </div>
             <div className="contact-header__LnR">
-                <button className="contact-header__button" title="Videollamada"><BsCameraVideo /></button>
                 <button className="contact-header__button" title="Llamada"><IoMdCall /></button>
             </div>
 
