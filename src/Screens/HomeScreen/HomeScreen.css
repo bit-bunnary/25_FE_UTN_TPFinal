@@ -98,11 +98,11 @@
         flex-direction: column;
     }
     .home-screen__sidebar-container {
-    width: 100%;
-    order: 2;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
+        width: 100%;
+        order: 2;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
     }
 
     .home-screen__contacts_y_app-logo-container {
@@ -112,6 +112,7 @@
         order: 1;
         margin: 0;
         overflow: auto;
+        border-radius: 0px;
     }
 
     .home-screen__welcome-container {
