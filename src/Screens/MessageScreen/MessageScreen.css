@@ -123,6 +123,7 @@
         height: 100vh;
         order: 1;
         margin: 0;
+        border-radius: 0px;
     }
 }
 
