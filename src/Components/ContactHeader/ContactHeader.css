@@ -290,3 +290,12 @@
         font-size: 8px;
     }
 }
+
+/* ------ Responsive Mobile Vertical ------ */
+
+@media (max-height: 650px){
+    .contact-popup{
+        height: 90%;
+        overflow-y: auto;
+    }
+}
