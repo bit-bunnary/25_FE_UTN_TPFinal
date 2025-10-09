@@ -19,7 +19,7 @@ const ContactHeader = ({image, name, last_connection, description}) => {
         <div className="contact-header">
             <div className="contact-header__LnR">
                 <button className="contact-header__back-button" onClick={handleGoHome}><BsHeartArrow /></button>
-                <button className="contact-header__image-button">
+                <button className="contact-header__image-button" title="Info. del Contacto">
                     <img className="contact-header__image" src={image} alt="Profile Pic" onClick={() => setShowContactPopUp(true)}></img>
                 </button>
                 <div className="contact-header__texts">
