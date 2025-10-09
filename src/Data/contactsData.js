@@ -96,7 +96,7 @@ const contacts = [
         profile_pic: '/Peter_And.jpg',
         image: '/Peter_And.jpg',
         name: 'Peter P.',
-        description:'Fotógrafo freelance, genio en ciencias, superhéroe ocasional.',
+        description:'Fotógrafo freelance, genio en ciencias, pasatiempo secreto...',
         last_connection: '(Last seen 17:00)',
         messages: [
             {
