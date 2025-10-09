@@ -2,20 +2,20 @@
 
 Para realizar la app (clon de WhatsApp, pero con estilos propios) utilicé:
 
-    ~ React (Vrs. 19.2.0)
-    ~ Enturamientos hechos con React-Router (Vrs. 7.9.1)
-    ~ Paquete de íconos de React Icons
-    ~ Utilicé Bootstrap (Vrs. 5.3.8) en un comienzo para hacer un CSS básico, el cuál descarté una vez empecé a trabajar con los estilos
+    - React (Vrs. 19.2.0)
+    - Enturamientos hechos con React-Router (Vrs. 7.9.1)
+    - Paquete de íconos de React Icons
+    - Utilicé Bootstrap (Vrs. 5.3.8) en un comienzo para hacer un CSS básico, el cuál descarté una vez empecé a trabajar con los estilos finales
 
 ## Features ##
 
 + Los botones funcionales son: 
 
-    ~ Chats (carta abierta) [se usó useNavigate]
-    ~ Configuración (engranaje) [se usó useState]
-    ~ Bonus (estampilla, "Easter Egg") [se usó useState]
-    ~ Info. del Contacto (foto de perfil) [se usó useState]
-    ~ Botón para enviar mensaje
+    - Chats (carta abierta) [se usó useNavigate]
+    - Configuración (engranaje) [se usó useState]
+    - Bonus (estampilla, "Easter Egg") [se usó useState]
+    - Info. del Contacto (foto de perfil) [se usó useState]
+    - Botón para enviar mensaje
 
 + Todos los Loaders que aparecen fueron hechos 100% por mí
 
@@ -31,9 +31,7 @@ Para realizar la app (clon de WhatsApp, pero con estilos propios) utilicé:
 
 
 
-## Info Extra ##
-
-# React + Vite
+### React + Vite ###
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
